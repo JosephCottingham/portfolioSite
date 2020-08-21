@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Joseph Cottingham</title>
+</head>
+<style media="screen">
+  .row-flex {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+  }
+
+  .col-flex {
+    flex-grow: 1;
+    margin: 10px;
+  }
+
+  .col-flex.card-black {
+    border-radius: 25px;
+    background-color: black;
+    color: white;
+  }
+
+  .col-flex.card-black p {
+    margin: 20px;
+  }
+
+  .col-flex h2 {
+    font-style: bold;
+    text-align: center;
+  }
+  h1 {
+    font-size: 70px;
+  }
+  h2 {
+    font-size: 40px;
+  }
+  .line-break {
+    height: 20px;
+    background-color: black;
+    color: black;
+    border-width: 0px;
+  }
+
+
+  body {
+    font-family: 'Do Hyeon', sans-serif;
+    padding: 0px;
+    margin: 0px;
+    background: linear-gradient(0deg, rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(static/img/header-laptop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+    overflow: scroll;
+  }
+
+  .icon {
+    filter: invert(100%);
+    height: 90px;
+    width: 90px;
+    margin: 20px;
+  }
+  .head {
+    color: white;
+    width: 100vw;
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-bottom: 10vh;
+    padding-left: 10vh;
+  }
+  .content-container {
+    margin-top: 50vh;
+    width: 100vw;
+    height: 90vh;
+    background: rgba(255, 255, 255);
+  }
+
+</style>
+
+<body>
+  <header class="head mast">
+    <h1>Joseph Cottingham</h1>
+    <h3>Web, Mobile, Hardware Developer</h3>
+  </header>
+  <div class="content-container">
+    <hr class="line-break">
+  <div class="row-flex">
+    <div class="col-flex card-black">
+      <div class="row-flex">
+        <img src="static/img/server.png" alt="server" class="icon">
+        <h2>Web</h2>
+      </div>
+      <article>
+        <p>
+          Specializing in backend development, I have provided enterprise architecture advice to many companies. My technical skills focus on API development in Python's Flask framework or Java, with data storage in a PostgreSQL database.
+        </p>
+      </article>
+    </div>
+    <div class="col-flex card-black">
+      <div class="row-flex">
+      <img src="static/img/phone.png" alt="phone" class="icon">
+      <h2>Mobile</h2>
+    </div>
+      <article>
+        <p>
+          Focusing on Android development, I have built cloud-integrated applications that focus on content delivery. My apps play nice with system services and provide a responsive experience that does not drain the battery dry.
+        </p>
+      </article>
+    </div>
+    <div class="col-flex card-black">
+      <div class="row-flex">
+      <img src="static/img/processor.png" alt="processor" class="icon">
+      <h2>Hardware</h2>
+    </div>
+      <article>
+        <p>
+          Since starting my first Internship at age 16, I have been working with hardware. With experience in Microcontroller firmware development, with both PIC and ARM architecture, I can write for nearly any platform. Having built IoT products
+          before, I have much experience in some of the most popular RF units/protocols, such as LoRa, Bluetooth, and Wifi.
+        </p>
+      </article>
+    </div>
+  </div>
+</div>
+</body>
+
+</html>
